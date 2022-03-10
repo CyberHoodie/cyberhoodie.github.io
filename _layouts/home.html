@@ -24,45 +24,124 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      {% for service in site.services %}
-      <div class="col-12 col-md-4 mb-1">
+      <div class="col-12 col-md-4 mb-1 mx-auto">
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+              Project Planning
             </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+
+            <p>
+              Every business is different. Therefore, each new project we take
+              on we do our best to really dig into your business and work with
+              you to figure out the best way to leverage the internet to help
+              meet your goals.
+            </p>
+
+            <p>
+              Once we have determined your goals we'll help you identify core
+              features of your application. We'll also work together to set
+              clear and attainable milestones.
+            </p>
           </div>
         </div>
       </div>
-      {% endfor %}
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+
+      <div class="col-12 col-md-4 mb-1 mx-auto">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              Design
+            </h2>
+
+            <p>
+              You want your users to have the right visual experience when
+              interacting with your app. We can help you do that! Need help
+              designing logos and getting images for your site? We'll help you
+              through that process as well.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-1 mx-auto">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              Database and Backend Development
+            </h2>
+
+            <p>
+              With years of experience under our belt designing both simple and
+              complete web applications, our developers will be able to meet
+              your data modeling needs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-1 mx-auto">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              Launch, Deployment, and Hosting
+            </h2>
+
+            <p>
+              Identifying and hooking up all the services you need to launch a
+              web application is a complicated process, but we make it easy. Our
+              developers will help you select the best hosting and domain name
+              services for your needs, and then hook it all up for you!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-1 mx-auto">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              Support, Upgrades, and Maintenance
+            </h2>
+
+            <p>
+              Getting your application to the public is just the beginning.
+              After you deploy your site, you can choose to keep us around. We
+              would help deal with any bugs that pop up, and keep your site
+              upgraded.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-{% if site.data.features %}
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">
 
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="col-12 col-md-10 col-lg-8 p-2 mb-2 mx-auto">
         <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
+          <h2 class="feature-title">Who are we?</h2>
+          <div class="feature-content">
+            <p>
+              When you hire CyberHoodie you get a full service design and
+              development agency that will help you bring your digital ideas to
+              life. That means we help you through every step of the process.
+              From solidifying your concept or idea, to deploying it to the
+              world.
+            </p>
+
+            <a href="{{ site.url }}/contact">
+              <button type="button" class="btn btn-primary btn-lg">
+                 Work with Us
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-      {% endfor %}
 
     </div>
   </div>
 </div>
-{% endif %}

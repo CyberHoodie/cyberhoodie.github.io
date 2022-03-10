@@ -1,6 +1,6 @@
-baseurl: '/'
+baseurl: ''
 permalink: pretty
-title: 'Jekyll Serif'
+title: CyberHoodie
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
